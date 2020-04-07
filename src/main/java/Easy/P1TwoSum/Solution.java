@@ -1,4 +1,4 @@
-package P1TwoSumEasy;
+package Easy.P1TwoSum;
 
 import java.util.HashMap;
 import java.util.Map;
