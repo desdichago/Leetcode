@@ -18,7 +18,6 @@ public class SolutionTest {
     public void reverse123() {
         int input = 123;
         int expected = 321;
-        solution = new Solution();
         int actual = solution.reverse(input);
         assertEquals(expected, actual);
     }
@@ -27,7 +26,6 @@ public class SolutionTest {
     public void reverseNegative123() {
         int input = -123;
         int expected = -321;
-        solution = new Solution();
         int actual = solution.reverse(input);
         assertEquals(expected, actual);
     }
@@ -36,7 +34,6 @@ public class SolutionTest {
     public void reverse120() {
         int input = 120;
         int expected = 21;
-        solution = new Solution();
         int actual = solution.reverse(input);
         assertEquals(expected, actual);
     }
