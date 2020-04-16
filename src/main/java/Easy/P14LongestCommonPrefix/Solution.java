@@ -24,15 +24,12 @@ class Solution {
             return "";
         }
 
-        for (int i = 0; i < strings[0].length(); i++) {
-            char c = strings[0].charAt(i);
-            for (int j = 1; j < strings.length; j++) {
-                if (i == strings[j].length() || strings[j].charAt(i) != c) {
-                    return strings[0].substring(0, i);
-                }
+        String prefix = strings[0];
+        for (int i = 1; i < strings.length; i++) {
+            while (strings[i].indexOf(prefix) != 0) {
+                prefix = prefix.substring(0, prefix.length()-1);
             }
         }
-
-        return strings[0];
+        return prefix;
     }
 }
