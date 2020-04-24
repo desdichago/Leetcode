@@ -32,4 +32,22 @@ public class SolutionTest {
         double actual = solution.findMedianSortedArrays(nums1, nums2);
         assertEquals(expected, actual, 0);
     }
+
+    @Test
+    public void findMedianSortedArrays3() {
+        int[] nums1 = new int[]{1, 2, 3, 4,  5,  6};
+        int[] nums2 = new int[]{0, 0, 0, 0, 10, 10};
+        double expected = 2.5;
+        double actual = solution.findMedianSortedArrays(nums1, nums2);
+        assertEquals(expected, actual, 0);
+    }
+
+    @Test
+    public void findMedianSortedArrays4() {
+        int[] nums1 = new int[]{};
+        int[] nums2 = new int[]{1, 2, 3};
+        double expected = 2;
+        double actual = solution.findMedianSortedArrays(nums1, nums2);
+        assertEquals(expected, actual, 0);
+    }
 }
