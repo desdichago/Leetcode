@@ -19,8 +19,9 @@ package Hard.P4MedianOfTwoSortedArrays;
  * O(m+n) solution (linear):
  */
 
-class Solution {
+class SolutionLinear {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+
         int pos1 = 0;
         int pos2 = 0;
         int posC = 0;

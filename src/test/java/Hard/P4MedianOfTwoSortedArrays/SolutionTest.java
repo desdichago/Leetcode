@@ -1,6 +1,5 @@
 package Hard.P4MedianOfTwoSortedArrays;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,11 +7,11 @@ import static org.junit.Assert.*;
 
 public class SolutionTest {
 
-    Solution solution;
+    SolutionLog solution;
 
     @Before
     public void setUp() {
-        solution = new Solution();
+        solution = new SolutionLog();
     }
 
     @Test
@@ -47,6 +46,15 @@ public class SolutionTest {
         int[] nums1 = new int[]{};
         int[] nums2 = new int[]{1, 2, 3};
         double expected = 2;
+        double actual = solution.findMedianSortedArrays(nums1, nums2);
+        assertEquals(expected, actual, 0);
+    }
+
+    @Test
+    public void findMedianSortedArrays5() {
+        int[] nums1 = new int[]{1, 2, 4, 5, 6, 7, 10};
+        int[] nums2 = new int[]{2, 6};
+        double expected = 5;
         double actual = solution.findMedianSortedArrays(nums1, nums2);
         assertEquals(expected, actual, 0);
     }
